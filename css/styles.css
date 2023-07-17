@@ -23,6 +23,35 @@ h1,h2,h3,h4,h5,h6,a{
     font-weight: 800;
 }
 
+h1.text-title {
+    color: #3A3A3A;
+    font-family: 'Oswald';
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+p.text-description {
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+button.btn-primary {
+    border-radius: 41px;
+    background: #E02C6D;
+    border: none;
+    padding: 15px 35px;
+    color: #fff;
+    font-size: 16px;
+}
+
+button.btn-primary i {
+    font-size: 16px;
+    margin-left: 5px;
+}
 
 /* Nav Styling Start */
 
@@ -53,4 +82,26 @@ ul > li > a {
     font-size: 18px;
     text-transform: capitalize;
     font-weight: 800;
+}
+
+/* Banner Styling Start */
+
+section#banner {
+    padding: 0 120px;
+}
+.banner-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bannar-left {
+    width: 30%;
+}
+.banner-right {
+    background-image: url('../images/Circle\ design.svg');
+}
+img.camera {
+    width: 480px;
+    height: 440px;
+    margin-top: 20px;
 }
