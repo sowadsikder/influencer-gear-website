@@ -62,26 +62,26 @@ button.btn-primary i {
 /* Nav Styling Start */
 
 .navbar {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 30px 25px;
 }
-.dropdown-icon{
-  border:none;
-  background-color:transparent;
+.dropdown-icon {
+  border: none;
+  background-color: transparent;
   display: none;
 }
 
 .dropdown-icon .fa-bars,
-.dropdown-icon .fa-x{
-  color:#3a3a3a;
-  font-size:1rem;
-  cursor:pointer;
+.dropdown-icon .fa-x {
+  color: #3a3a3a;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .dropdown-icon input[type="checkbox"] {
@@ -130,23 +130,36 @@ section#banner {
   background-size: cover;
 }
 
+/* Sponser Styling Start */
+
+.sponser-container {
+  display: flex;
+  justify-content: center;
+}
+.sponser-company-left img {
+  padding: 0 30px;
+}
+
+.sponser-company-right img {
+  padding: 0 30px;
+}
 
 /* Responsive Media Query Start*/
 
-/* Medium Devices Media Query */
+/* Large Devices Media Query */
 
-@media screen and (max-width: 768px) {
-  .navbar {
+@media screen and (max-width: 992px) {
+  /* .navbar {
     display: block;
     flex-direction: column-reverse;
     background-color: lightgray;
   }
   .navigation {
-    height:0;
-    overflow:hidden;
+    height: 0;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
-    transition:all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .logo {
     display: flex;
@@ -155,41 +168,57 @@ section#banner {
   .dropdown-icon {
     display: block;
   }
-  .fa-x{
-    display:none;
+  .fa-x {
+    display: none;
   }
   .navbar:has(.dropdown-icon input[type="checkbox"]:checked) .navigation {
     margin-top: 1rem;
     height: 40vh;
   }
   .navbar:has(.dropdown-icon input[type="checkbox"]:checked) .fa-bars {
-    display:none;
+    display: none;
   }
   .navbar:has(.dropdown-icon input[type="checkbox"]:checked) .fa-x {
-    display:inline-block;
-  }
+    display: inline-block;
+  } */
   .banner-container {
     flex-direction: column-reverse;
   }
-  .bannar-left{
+  .bannar-left {
     width: 90%;
     margin-top: 100px;
   }
-  h1.text-title{
+  h1.text-title {
     font-size: 35px;
     margin-bottom: 10px;
   }
-  .banner-right{
+  .banner-right {
     background-image: url("../images/Circle\ design.svg");
     background-size: contain;
     background-position: center;
   }
-  .banner-right img{
+  .banner-right img {
     width: 80%;
     margin-left: 45px;
   }
+  /* .sponser-container {
+    flex-direction: column;
+  } */
+  .sponser-company-left img {
+    padding: 0 25px;
+  }
   
+  .sponser-company-right img {
+    padding: 0 25px;
+  }
+  .sponser-company-left{
+    margin-bottom: 20px;
+  }
 }
+
+
+/* Medium Devices Media Query */
+
 
 /* Mobile Devices Media Query */
 @media screen and (max-width: 576px) {
@@ -199,11 +228,11 @@ section#banner {
     background-color: lightgray;
   }
   .navigation {
-    height:0;
-    overflow:hidden;
+    height: 0;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
-    transition:all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .logo {
     display: flex;
@@ -212,38 +241,53 @@ section#banner {
   .dropdown-icon {
     display: block;
   }
-  .fa-x{
-    display:none;
+  .fa-x {
+    display: none;
   }
   .navbar:has(.dropdown-icon input[type="checkbox"]:checked) .navigation {
     margin-top: 1rem;
     height: 40vh;
   }
   .navbar:has(.dropdown-icon input[type="checkbox"]:checked) .fa-bars {
-    display:none;
+    display: none;
   }
   .navbar:has(.dropdown-icon input[type="checkbox"]:checked) .fa-x {
-    display:inline-block;
+    display: inline-block;
   }
-  .banner-container {
+  .banner-container, .sponser-container {
     flex-direction: column-reverse;
   }
-  .bannar-left{
+  .bannar-left {
     width: 80%;
     margin-top: 100px;
+    text-align: center;
   }
-  h1.text-title{
+  h1.text-title {
     font-size: 25px;
     margin-bottom: 10px;
   }
-  .banner-right{
+ 
+  .banner-right {
     background-image: url("../images/Circle\ design.svg");
     background-size: contain;
     background-position: center;
   }
-  .banner-right img{
+  .banner-right img {
     width: 80%;
     margin-left: 45px;
   }
+  .sponser-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sponser-company-left img {
+    padding: 0 15px;
+  }
   
+  .sponser-company-right img {
+    padding: 0 15px;
+  }
+  .sponser-company-left{
+    margin-bottom: 20px;
+  }
 }
